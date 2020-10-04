@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="50dp"
+        android:text="Calculadora"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_margin="20dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/calculadoralogo" />
+
+    <EditText
+        android:id="@+id/Et_Num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Pimer Numero"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/Et_Num2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Segundo Numero"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/Tv_respuesta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/Btn_suma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Suma" />
+
+            <Button
+                android:id="@+id/Btn_resta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resta" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/Btn_mult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mulltiplicacion" />
+
+            <Button
+                android:id="@+id/Btn_div"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="division" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
